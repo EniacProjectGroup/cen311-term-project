@@ -26,7 +26,38 @@ body {
     padding-left: 1rem; /* Default Tailwind padding */
     padding-right: 1rem;
 }
+
+.accordion-button {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    background-color: #eee;
+    transition: 0.4s ease;
+  }
+
+.accordion {
+    padding-bottom: 10px;
+
+}
   
+  .active, .accordion-button:hover {
+    background-color: #ccc; 
+    transition: 0.4s ease;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    padding-top: 15px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
 /* Responsive widths based on Tailwind's breakpoints */
 @media (min-width: 640px) { /* sm */
     .container {

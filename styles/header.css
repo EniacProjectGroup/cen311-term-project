@@ -9,9 +9,8 @@
 
   .header-container {
     display: flex;
-    margin: 0 10%;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 15px 15%;
     align-items: center;
   }
 

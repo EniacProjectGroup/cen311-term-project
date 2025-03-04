@@ -1,13 +1,9 @@
-.main {
+.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
     background-color: #f0f0f0;
-    margin: 20px 0;
-}
-
-.carousel {
+    height: 400px;
     display: flex;
     align-items: center;  
     justify-content: center;  
@@ -42,6 +38,7 @@
     width: 85%;
     margin: 0 auto;
     text-align: center;
+    padding: 30px 0;
 }
 
 .comment {

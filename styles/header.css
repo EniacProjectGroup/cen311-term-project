@@ -1,0 +1,50 @@
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .header-container {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+  }
+
+  .header-logo {
+    padding: 5px 10px;
+    width: 150px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .auth-buttons button {
+    border: 1px solid black;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .content {
+    margin-top: 60px; /* To prevent content from being hidden behind the fixed header */
+    padding: 20px;
+  }

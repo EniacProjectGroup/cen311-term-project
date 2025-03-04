@@ -9,7 +9,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 75px; /* Height of fixed header */
+    padding-bottom: 130px; /* Height of fixed footer */
  }
+
+.page-heading {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
 
  .container {
     width: 100%;

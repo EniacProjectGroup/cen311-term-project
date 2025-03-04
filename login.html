@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/login-page.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/landing-page.css" />
-    <title>Casting Agency</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <title>Login</title>
   </head>
   <body>
     <header class="header">
@@ -41,39 +37,50 @@
       </div>
     </header>
 
-    <div class="container">
-      <main class="main">
-        <div class="carousel">
-          <button class="carousel-btn left-btn">&#10094;</button>
-          <div class="blue-box"></div>
-          <button class="carousel-btn right-btn">&#10095;</button>
+    <main>
+      <div class="page-heading">
+        <h1>Login</h1>
+      </div>
+      <div class="container">
+        <div class="login-page-container">
+          <div class="login-block-container">
+            <img
+              class="login-form-logo"
+              src="images/logo.svg"
+              alt="Casting Agency Logo"
+            />
+            <form>
+              <div class="form-input">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your E-mail"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <div class="form-bottom">
+                <button class="login-submit" type="submit">Login</button>
+                <a class="register-link" href="#">Forgot your password?</a>
+              </div>
+            </form>
+          </div>
         </div>
-      </main>
-      <section class="comments">
-        <div class="comment">
-          <h3><strong>xxxxxxx</strong></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-            eutmod tempor incidudent ut labore et dolore...
-          </p>
+
+        <div class="register-link-block">
+          <a href="register.html">Don't have an account? Register</a>
         </div>
-        <div class="comment">
-          <h3><strong>xxxxxxx</strong></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-            eutmod tempor incidudent ut labore et dolore...
-          </p>
-        </div>
-        <div class="comment">
-          <h3><strong>xxxxxxx</strong></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-            eutmod tempor incidudent ut labore et dolore...
-          </p>
-        </div>
-      </section>
-      <!-- Main page content -->
-    </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="footer-left">

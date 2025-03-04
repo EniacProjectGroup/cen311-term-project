@@ -37,3 +37,8 @@
     text-align: end;
     font-size: small;
 }
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}

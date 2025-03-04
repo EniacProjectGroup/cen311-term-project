@@ -2,11 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
+ }
+
+ .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Default Tailwind padding */
+    padding-right: 1rem;
+}
+  
+/* Responsive widths based on Tailwind's breakpoints */
+@media (min-width: 640px) { /* sm */
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) { /* md */
+    .container {
+        max-width: 768px;
+}
+}
+@media (min-width: 1024px) { /* lg */
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) { /* xl */
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) { /* 2xl */
+    .container {
+        max-width: 1536px;
+    }
+}

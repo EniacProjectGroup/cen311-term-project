@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/landing-page.css" />
+    <link rel="stylesheet" href="styles/faqs-page.css" />
     <title>Casting Agency</title>
     <link
       rel="stylesheet"
@@ -42,35 +42,45 @@
     </header>
 
     <main>
-      <div class="carousel">
-        <button class="carousel-btn left-btn">&#10094;</button>
-        <div class="blue-box"></div>
-        <button class="carousel-btn right-btn">&#10095;</button>
-      </div>
+      <div class="page-heading"><h1>FAQs</h1></div>
       <div class="container">
-        <section class="comments">
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
+        <div class="faqs-container">
+          <div class="accordion">
+            <button class="accordion-button">Question 1</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
+
+          <div class="accordion">
+            <button class="accordion-button">Question 2</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
+
+          <div class="accordion">
+            <button class="accordion-button">Question 3</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
 
@@ -109,5 +119,22 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion-button");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

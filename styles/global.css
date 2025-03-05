@@ -109,6 +109,23 @@ body {
     gap: 10px;
 }
 
+/* Auth buttons style */
+.auth-buttons a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid #444;
+    border-radius: 15px;
+    padding: 7px 15px;
+    transition: 0.2s ease-in-out;   
+}
+
+/* Hover animation for auth buttons */
+.auth-buttons a:hover {
+    background-color: #e4e4e4;
+}
+
 /* Login and Register buttons */
 .auth-buttons button {
     border: 1px solid black;

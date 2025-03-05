@@ -1,25 +1,29 @@
+/* Global Reset: Removes default margins and paddings from all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global styles for body */
 body {
     font-family: Arial, sans-serif;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the page takes up at least the full viewport height */
     display: flex;
     flex-direction: column;
-    padding-top: 75px; /* Height of fixed header */
-    padding-bottom: 130px; /* Height of fixed footer */
- }
+    padding-top: 75px; /* Reserves space for the fixed header */
+    padding-bottom: 130px; /* Reserves space for the fixed footer */
+}
 
+/* Page Heading: Adds padding and a bottom border */
 .page-heading {
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #000;
 }
 
- .container {
+/* General container styling */
+.container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -27,6 +31,7 @@ body {
     padding-right: 1rem;
 }
 
+/* Accordion button styles */
 .accordion-button {
     color: #444;
     cursor: pointer;
@@ -38,27 +43,134 @@ body {
     font-size: 15px;
     background-color: #eee;
     transition: 0.4s ease;
-  }
+}
 
+/* Adds spacing between accordion sections */
 .accordion {
     padding-bottom: 10px;
-
 }
-  
-  .active, .accordion-button:hover {
+
+/* Styles for active accordion state */
+.active, .accordion-button:hover {
     background-color: #ccc; 
     transition: 0.4s ease;
-  }
-  
-  .panel {
+}
+
+/* Accordion panel (content inside the accordion) */
+.panel {
     padding: 0 18px;
     padding-top: 15px;
-    display: none;
+    display: none; /* Hidden by default */
     background-color: white;
     overflow: hidden;
-  }
+}
 
-/* Responsive widths based on Tailwind's breakpoints */
+/* Fixed Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 75px;
+}
+
+/* Header content layout */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15%;
+    align-items: center;
+}
+
+/* Logo inside the header */
+.header-logo {
+    padding: 5px 10px;
+    width: 150px;
+}
+
+/* Navigation styling */
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation links */
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Authentication buttons container */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Login and Register buttons */
+.auth-buttons button {
+    border: 1px solid black;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Fixed Footer Styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15%;
+    border-top: 1px solid #ccc;
+    height: 100px;
+}
+
+/* Left section of the footer (logo) */
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer logo styling */
+.logo-footer {
+    width: 120px;
+}
+
+/* Right section of the footer (social icons) */
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Footer social media links */
+.footer-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Footer center text */
+.footer-center p {
+    text-align: end;
+    font-size: small;
+}
+
+/* Social media icon size */
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive Layout: Adjust container width based on Tailwind breakpoints */
 @media (min-width: 640px) { /* sm */
     .container {
         max-width: 640px;
@@ -67,7 +179,7 @@ body {
 @media (min-width: 768px) { /* md */
     .container {
         max-width: 768px;
-}
+    }
 }
 @media (min-width: 1024px) { /* lg */
     .container {

@@ -2,20 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures proper text encoding for special characters -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the website responsive on different screen sizes -->
+
+    <!-- Global styles -->
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/header.css" />
+
+    <!-- Page-specific styles -->
     <link rel="stylesheet" href="styles/landing-page.css" />
+
     <title>Casting Agency</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header class="header">
       <div class="header-container">
+        <!-- Logo linking to the homepage -->
         <a href="index.html">
           <img
             class="header-logo"
@@ -23,50 +27,74 @@
             alt="Casting Agency Logo"
           />
         </a>
+
+        <!-- Navigation menu -->
         <nav class="nav">
           <a href="#">Actors</a>
+          <!-- Link to actors page -->
           <a href="#">Projects</a>
+          <!-- Link to projects page -->
           <a href="about-us.html">About Us</a>
+          <!-- Link to about us page -->
           <a href="contact-us.html">Contact Us</a>
+          <!-- Link to contact us page -->
           <a href="faqs.html">FAQs</a>
+          <!-- Link to FAQs page -->
         </nav>
+
+        <!-- Authentication buttons -->
         <div class="auth-buttons">
           <a href="login.html">
             <button>Login</button>
+            <!-- Login button -->
           </a>
           <a href="register.html">
             <button>Register</button>
+            <!-- Register button -->
           </a>
         </div>
       </div>
     </header>
 
     <main>
+      <!-- CAROUSEL SECTION -->
       <div class="carousel">
+        <!-- Left navigation button for the carousel -->
         <button class="carousel-btn left-btn">&#10094;</button>
+
+        <!-- Placeholder for the carousel content -->
         <div class="blue-box"></div>
+
+        <!-- Right navigation button for the carousel -->
         <button class="carousel-btn right-btn">&#10095;</button>
       </div>
+
+      <!-- Main container for the comments section -->
       <div class="container">
         <section class="comments">
+          <!-- Individual comment -->
           <div class="comment">
             <h3><strong>xxxxxxx</strong></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
               eutmod tempor incidudent ut labore et dolore...
             </p>
           </div>
+
+          <!-- Another comment -->
           <div class="comment">
             <h3><strong>xxxxxxx</strong></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
               eutmod tempor incidudent ut labore et dolore...
             </p>
           </div>
+
+          <!-- Third comment -->
           <div class="comment">
             <h3><strong>xxxxxxx</strong></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed to
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
               eutmod tempor incidudent ut labore et dolore...
             </p>
           </div>
@@ -74,18 +102,24 @@
       </div>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer class="footer">
       <div class="footer-left">
+        <!-- Footer logo -->
         <img
           class="logo-footer"
           src="images/logo.svg"
           alt="Casting Agency Logo"
         />
       </div>
+
       <div class="footer-center">
+        <!-- Copyright information -->
         <p>Copyright © 2025 Company name. All Rights Reserved</p>
       </div>
+
       <div class="footer-right">
+        <!-- Social media links -->
         <a href="https://www.instagram.com" target="_blank">
           <img
             class="social-icon"

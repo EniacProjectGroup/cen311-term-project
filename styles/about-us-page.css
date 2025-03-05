@@ -1,4 +1,4 @@
 .about-us-text {
-    padding: 30px 20%;
-    text-align: center;
+    padding: 30px 20%; /* Adds 30px of padding to the top/bottom and 20% to the left/right for centering */
+    text-align: center; /* Centers the text horizontally */
 }

@@ -86,8 +86,7 @@ body {
 
 /* Logo inside the header */
 .header-logo {
-    padding: 5px 10px;
-    width: 150px;
+    width: 80px;
 }
 
 /* Navigation styling */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actor Detail</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/actor-detail.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="script/add-layout.js"></script>
+  <script src="script/actor-detail.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="actor-detail">
+    <h1 id="actor-title">Actor Name</h1>
+
+    <div id="tabs">
+      <ul>
+        <li><a href="#about">Biography</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+
+      <div id="about"></div>
+      <div id="gallery" class="gallery"></div>
+      <div id="projects" class="actors-grid"></div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+</body>
+</html>

@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Ensures proper text encoding for special characters -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casting Agency</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Makes the website responsive on different screen sizes -->
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/landing-page.css" />
+  <link rel="stylesheet" href="styles/actors-page.css" />
+  <link rel="stylesheet" href="styles/projects-page.css" />
+  <link rel="stylesheet" href="styles/carousel.css" />
 
-    <!-- Global styles -->
-    <link rel="stylesheet" href="styles/global.css" />
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
 
-    <!-- Page-specific styles -->
-    <link rel="stylesheet" href="styles/landing-page.css" />
-
-    <title>Casting Agency</title>
-  </head>
-  <body>
-    <main>
-      <!-- CAROUSEL SECTION -->
+<body>
+  <main>
+    <div class="carousel-wrapper">
       <div class="carousel">
-        <!-- Left navigation button for the carousel -->
-        <button class="carousel-btn left-btn">&#10094;</button>
-
-        <!-- Placeholder for the carousel content -->
-        <div class="blue-box"></div>
-
-        <!-- Right navigation button for the carousel -->
-        <button class="carousel-btn right-btn">&#10095;</button>
+        <img src="images/actors/actors1.jpg" alt="Image 1">
+        <img src="images/actors/actors2.jpg" alt="Image 2">
+        <img src="images/actors/actors3.jpg" alt="Image 3">
       </div>
+    </div>
 
-      <!-- Main container for the comments section -->
-      <div class="container">
-        <section class="comments">
-          <!-- Individual comment -->
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
-          </div>
+    <div class="container">
+      <section class="comments">
+        <div class="comment">
+          <h3><strong>xxxxxxx</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+        </div>
+        <div class="comment">
+          <h3><strong>xxxxxxx</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+        </div>
+        <div class="comment">
+          <h3><strong>xxxxxxx</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+        </div>
+      </section>
+    </div>
+  </main>
 
-          <!-- Another comment -->
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
-          </div>
-
-          <!-- Third comment -->
-          <div class="comment">
-            <h3><strong>xxxxxxx</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to
-              eutmod tempor incidudent ut labore et dolore...
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
+  <!-- jQuery ve Slick Carousel JS -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="./script/add-layout.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Layout Script -->
+  <script src="script/add-layout.js"></script>
+
+  <!-- Carousel Script -->
+  <script src="script/carousel.js"></script>
+</body>
 </html>

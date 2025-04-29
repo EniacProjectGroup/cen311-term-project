@@ -1,0 +1,104 @@
+.project-detail {
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-heading h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Sekmeler */
+#tabs {
+  margin-top: 20px;
+}
+
+#tabs ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+#tabs li {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#tabs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#tabs .ui-tabs-active a {
+  color: #fff;
+  background: #333;
+  border-radius: 20px;
+}
+
+/* Galeri */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Aktörler */
+
+.actors-grid {
+  display: flex;          
+  gap: 20px;               
+  justify-content: center; 
+}
+
+
+.actor-card {
+  text-align: center;
+  width: 200px;            
+  flex: 1 0 200px;        
+}
+
+.actor-card img {
+  width: 150px;            
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.actor-card img:hover {
+  transform: scale(1.1);
+}
+
+.actor-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}

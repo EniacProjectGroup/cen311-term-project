@@ -10,14 +10,19 @@
     <!-- Page specific styles -->
     <link rel="stylesheet" href="styles/contact-us-page.css" />
 
+    <!-- jQuery UI Datepicker CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <title>Casting Agency</title>
   </head>
+
   <body>
     <main>
       <!-- Page Heading -->
       <div class="page-heading">
         <h1>Contact Us</h1>
       </div>
+
       <div class="container">
         <!-- Contact Us Information -->
         <div class="contact-us-container spaced">
@@ -31,17 +36,18 @@
             </p>
             <p class="address-line">0-4700-3910-1400016</p>
           </div>
-
           <div class="mail-container">
             <p class="mail">
               Young Talent Applications:
-              <a href="mailto::yksl3461@gmail.com">cv@iletisim.tr</a>
+              <a href="mailto:yksl3461@gmail.com">cv@iletisim.tr</a>
             </p>
           </div>
         </div>
+
         <div class="contact-form spaced">
           <h2>Get in touch</h2>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
             <input
               type="hidden"
               name="access_key"
@@ -50,53 +56,73 @@
 
             <div class="form-group">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
             </div>
 
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
+              <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Contact Date</label>
+              <input type="text" id="date" name="date" placeholder="Select a date" required />
             </div>
 
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write your message here..."
-                required
-              ></textarea>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
             </div>
 
             <button type="submit">Send Message</button>
           </form>
+
+          
+          <div id="thankyou" style="display:none; margin-top:20px;">
+            <h2>Thank you for contacting us!</h2>
+          </div>
+
         </div>
       </div>
     </main>
+
+    <!-- jQuery, jQuery Validation ve jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./script/add-layout.js"></script>
+
+    <script>
+      $(function() {
+        // Datepicker 
+        $("#date").datepicker({
+          dateFormat: "dd-mm-yy"
+        });
+
+        // Form validation
+        $("#contactForm").validate({
+          submitHandler: function(form) {
+            $.ajax({
+              type: "POST",
+              url: $(form).attr('action'),
+              data: $(form).serialize(),
+              success: function() {
+                $("#contactForm").hide();
+                $("#thankyou").fadeIn();
+              },
+              error: function() {
+                alert("The form could not be sent. Please try again..");
+              }
+            });
+            return false; 
+          }
+        });
+      });
+    </script>
+
   </body>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="./script/add-layout.js"></script>
 </html>

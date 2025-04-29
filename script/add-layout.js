@@ -10,3 +10,4 @@ $(document).ready(function () {
   $("body").append(`<div id="footer"></div>`);
   $("#footer").load("layout/footer.html");
 });
+

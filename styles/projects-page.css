@@ -1,0 +1,84 @@
+.projects-page {
+    padding: 40px;
+    padding-top: 80px; /* Üst iç boşluğu 80px artırır */
+    text-align: center;
+    display: flex; /* Flexbox layout'unu etkinleştirir */
+    flex-direction: column; /* İç öğeleri dikey olarak sıralar */
+    align-items: center; /* Yatayda öğeleri ortalar */
+}
+  
+  
+  .project-categories {
+    margin: 20px 0;
+  }
+  
+  .project-categories a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .project-categories a:hover {
+    color: #000;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px; /* Alt boşluğu 50px artırır */
+    justify-items: center;
+    width: 100%; /* Grid'in konteyner genişliğini almasını sağlar */
+    max-width: 1200px;
+  }
+/* Projelerin filtrelenirken yumuşak bir şekilde kaybolması ve gelmesi */
+.project-card {
+  width: 240px;
+  height: 400px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  opacity: 1; /* Başlangıçta tamamen görünür */
+  transition: opacity 0.6s ease; /* Yalnızca opaklık değişimi için geçiş süresi */
+  margin-bottom: 30px; /* Alt boşluğu 30px artırır */
+}
+
+.project-card.isotope-hidden {
+  opacity: 0; /* Filtrelendiğinde tamamen şeffaf olacak */
+}
+
+/* Hover efekti (proje kartına tıklanabilirlik eklemek için) */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* İmage transition: yumuşak bir geçiş efekti ekliyoruz */
+.project-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1); /* Hover olduğunda image biraz büyüyecek */
+}
+
+/* Proje başlığının geçiş efekti */
+.project-card h3 {
+  margin-top: 10px;
+  color: #333;
+  transition: color 0.3s ease; /* Başlık rengini yavaşça değiştireceğiz */
+}
+
+.project-card:hover h3 {
+  color: #007bff; /* Hover olduğunda başlık maviye dönüşecek */
+}
+

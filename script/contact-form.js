@@ -13,19 +13,7 @@ $(function () {
   // Form validation
   $("#contactForm").validate({
     submitHandler: function (form) {
-      $.ajax({
-        type: "POST",
-        url: $(form).attr("action"),
-        data: $(form).serialize(),
-        success: function () {
-          $("#contactForm").hide();
-          $("#thankyou").fadeIn();
-        },
-        error: function (ex) {
-          alert(ex.message);
-        },
-      });
-      return false;
+      form.submit();
     },
   });
 });

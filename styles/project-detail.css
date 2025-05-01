@@ -1,3 +1,4 @@
+/* Main container for the project detail content */
 .project-detail {
   padding: 40px;
   width: 80%;
@@ -7,6 +8,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section heading */
 .page-heading {
   text-align: center;
   margin-bottom: 30px;
@@ -17,7 +19,7 @@
   color: #333;
 }
 
-/* Sekmeler */
+/* jQuery UI tabs container */
 #tabs {
   margin-top: 20px;
 }
@@ -30,6 +32,7 @@
   list-style: none;
 }
 
+/* Tab items */
 #tabs li {
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -39,18 +42,20 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Tab links */
 #tabs li a {
   text-decoration: none;
   color: #333;
 }
 
+/* Active tab styling via jQuery UI */
 #tabs .ui-tabs-active a {
   color: #fff;
   background: #333;
   border-radius: 20px;
 }
 
-/* Galeri */
+/* Image gallery section */
 .gallery {
   display: flex;
   gap: 20px;
@@ -58,6 +63,7 @@
   margin-top: 20px;
 }
 
+/* Individual gallery images */
 .gallery img {
   width: 200px;
   height: 200px;
@@ -66,37 +72,40 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Image hover animation */
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Aktörler */
-
+/* Reuse of actors grid (for related people/projects) */
 .actors-grid {
-  display: flex;          
-  gap: 20px;               
-  justify-content: center; 
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-
+/* Card for each actor */
 .actor-card {
   text-align: center;
-  width: 200px;            
-  flex: 1 0 200px;        
+  width: 200px;
+  flex: 1 0 200px;
 }
 
+/* Actor image (circular) */
 .actor-card img {
-  width: 150px;            
+  width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
 
+/* Hover effect for actor image */
 .actor-card img:hover {
   transform: scale(1.1);
 }
 
+/* Actor name */
 .actor-card h3 {
   margin-top: 10px;
   font-size: 1.2rem;

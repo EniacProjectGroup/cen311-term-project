@@ -1,86 +1,100 @@
+/* Outer wrapper for contact info (phone, address, email) */
 .contact-us-container {
-    display: flex; /* Uses flexbox for layout */
-    flex-direction: column; /* Arranges elements in a vertical column */
-    align-items: center; /* Centers items horizontally */
-    text-align: center; /* Centers the text content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border: 1px solid #003366;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.phone-numbers {
-    padding: 30px; /* Adds spacing around the phone number section */
-}
-
-.phone-numbers p {
-    margin: 5px 0; /* Adds vertical spacing between phone number lines */
-}
-
-.address {
-    padding: 30px; /* Adds spacing around the address section */
-}
-
-.address .address-line {
-    margin: 10px 0; /* Adds vertical spacing between address lines */
-}
-
-.contact-form {
+  }
+  
+  /* Phone numbers section */
+  .phone-numbers {
+    padding: 30px;
+  }
+  
+  .phone-numbers p {
+    margin: 5px 0;
+  }
+  
+  /* Address section */
+  .address {
+    padding: 30px;
+  }
+  
+  .address .address-line {
+    margin: 10px 0;
+  }
+  
+  /* Contact form styling */
+  .contact-form {
     background-color: #fff;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-}
-
-.contact-form h2 {
+  }
+  
+  /* Form heading */
+  .contact-form h2 {
     margin-bottom: 15px;
     color: #333;
-}
-
-.form-group {
+  }
+  
+  /* Spacing for label-input pairs */
+  .form-group {
     margin-bottom: 15px;
-}
-
-.form-group label {
+  }
+  
+  /* Input labels */
+  .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #555;
-}
-
-.form-group input,
-.form-group textarea {
+  }
+  
+  /* Input & textarea shared styles */
+  .form-group input,
+  .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-.form-group textarea {
+  }
+  
+  /* Textarea-specific tweaks */
+  .form-group textarea {
     resize: vertical;
     height: 120px;
-}
-
-button {
+  }
+  
+  /* Submit button */
+  button {
     padding: 10px 20px;
     background-color: #003366;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
+  }
+  
+  /* Button hover effect */
+  button:hover {
     background-color: #00509e;
-}
-
-.container {
+  }
+  
+  /* Flex wrapper for spacing two elements side by side (e.g., form & info) */
+  .container {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
-}
-
-.spaced {
+  }
+  
+  /* Adds horizontal spacing between sibling elements */
+  .spaced {
     margin: 0 1rem;
-}
+  }
+  

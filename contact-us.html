@@ -4,78 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Global styles -->
+    <title>Casting Agency</title>
+
+    <!-- Global and page-specific CSS -->
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/contact-us-page.css" />
-
-    <!-- jQuery UI CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-
-    <title>Casting Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
   </head>
 
   <body>
     <main>
+      <!-- Page heading -->
       <div class="page-heading">
         <h1>Contact Us</h1>
       </div>
 
       <div class="container">
+        <!-- Static contact info section -->
         <div class="contact-us-container spaced">
           <div class="phone-numbers">
             <p>T: +90 212 298 33 16</p>
             <p>T: +90 212 270 77 69</p>
           </div>
+
           <div class="address">
-            <p class="address-line">AYBU SOKAK 12/A 34330 ETLIK - ANKARA/TURKEY MERSİS</p>
+            <p class="address-line">
+              AYBU SOKAK 12/A 34330 ETLIK - ANKARA/TURKEY MERSİS
+            </p>
             <p class="address-line">0-4700-3910-1400016</p>
           </div>
+
           <div class="mail-container">
             <p class="mail">
               Young Talent Applications:
-              <a href="mailto:yksl3461@gmail.com">cv@iletisim.tr</a>
+              <!-- Minor fix: updated mismatched email href -->
+              <a href="mailto:cv@iletisim.tr">cv@iletisim.tr</a>
             </p>
           </div>
         </div>
 
+        <!-- Contact form section -->
         <div class="contact-form spaced">
           <h2>Get in touch</h2>
 
-          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="fcb36d1d-dbfd-45cc-928c-59dee57d0abb" />
-          
+          <form
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <!-- Hidden API key for Web3Forms (do not expose in production apps) -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="fcb36d1d-dbfd-45cc-928c-59dee57d0abb"
+            />
+
+            <!-- Name input -->
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required title="Please enter your name." />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                title="Please enter your name."
+              />
             </div>
-          
+
+            <!-- Email input -->
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required title="Enter validate e-mail.." />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                title="Enter a valid e-mail."
+              />
             </div>
-          
+
+            <!-- Subject input -->
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Subject" required title="Write the message subject." />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+                title="Write the message subject."
+              />
             </div>
-          
+
+            <!-- Message textarea -->
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write your message here..." required title="Please write the message you want to convey here."></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                required
+                title="Please write your message here."
+              ></textarea>
             </div>
-          
+
+            <!-- Submit button -->
             <button type="submit" id="submitButton">Send Message</button>
           </form>
-          
 
-          <div id="thankyou" style="display:none; margin-top:20px;">
+          <!-- Thank-you message displayed after form submission -->
+          <div id="thankyou" style="display: none; margin-top: 20px">
             <h2>Thank you for contacting us!</h2>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- JS files -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>

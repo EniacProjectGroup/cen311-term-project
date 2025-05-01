@@ -9,15 +9,15 @@ const projects = {
         <p><strong>Actors:</strong> Julie Bowen,Jenna Ortega, Maddie Zieglar</p>
     `,
     gallery: [
-        { src: "images/projects/fallout1.jpg", title: "Fallout Gallery 1" },
-        { src: "images/projects/fallout2.jpg", title: "Fallout Gallery 2" }
+      { src: "images/projects/fallout1.jpg", title: "Fallout Gallery 1" },
+      { src: "images/projects/fallout2.jpg", title: "Fallout Gallery 2" },
     ],
     actors: [
-        { src: "images/actors/julie-bowen.jpg", name: "Julie Bowen" },
-        { src: "images/actors/maddie-zieglar.jpg", name: "Maddie Zieglar" },
-        { src: "images/actors/jenna-ortega.jpg", name: "Jenna Ortega" }
-    ]
-    },
+      { src: "images/actors/julie-bowen.jpg", name: "Julie Bowen" },
+      { src: "images/actors/maddie-zieglar.jpg", name: "Maddie Zieglar" },
+      { src: "images/actors/jenna-ortega.jpg", name: "Jenna Ortega" },
+    ],
+  },
 
   got: {
     title: "Game Of Thrones",
@@ -29,17 +29,16 @@ const projects = {
         <p><strong>Actors:</strong> Kit Harington, Emilia Clarke, Lena Headey,Peter Dinklage</p>
     `,
     gallery: [
-        { src: "images/projects/got-project.jpg", title: "Reklam 1 Gallery 1" },
-        { src: "images/projects/got-project2.jpg", title: "Reklam 1 Gallery 2" },
-        { src: "images/projects/got-project3.jpg", title: "Reklam 1 Gallery 2" }
-  
+      { src: "images/projects/got-project.jpg", title: "Reklam 1 Gallery 1" },
+      { src: "images/projects/got-project2.jpg", title: "Reklam 1 Gallery 2" },
+      { src: "images/projects/got-project3.jpg", title: "Reklam 1 Gallery 2" },
     ],
     actors: [
-        { src: "images/actors/emilia-clarke.jpg", name: "Emilia Clarke" },
-        { src: "images/actors/kit-harington.jpg", name: "Kit Harington" }
-    ]
-    },
-  
+      { src: "images/actors/emilia-clarke.jpg", name: "Emilia Clarke" },
+      { src: "images/actors/kit-harington.jpg", name: "Kit Harington" },
+    ],
+  },
+
   alice: {
     title: "Alice Musical",
     about: `
@@ -52,19 +51,19 @@ const projects = {
         <p><strong>Actors:</strong> Serenay Sarıkaya,Ezgi Mola, Şükrü Özyıldız,Enis Arıkan,Merve Dizdar</p>
     `,
     gallery: [
-        { src: "images/projects/alice-project.jpg", title: "Dizi 1 Gallery 1" },
-        { src: "images/projects/alice-project1.jpg", title: "Dizi 1 Gallery 2" },
-        { src: "images/projects/alice-project2.jpg", title: "Dizi 1 Gallery 2" },
-        { src: "images/projects/alice-project3.jpg", title: "Dizi 1 Gallery 2" }
+      { src: "images/projects/alice-project.jpg", title: "Dizi 1 Gallery 1" },
+      { src: "images/projects/alice-project1.jpg", title: "Dizi 1 Gallery 2" },
+      { src: "images/projects/alice-project2.jpg", title: "Dizi 1 Gallery 2" },
+      { src: "images/projects/alice-project3.jpg", title: "Dizi 1 Gallery 2" },
     ],
     actors: [
-        { src: "images/actors/serenay-sarikaya.jpg", name: "Serenay Sarıkaya" },
-        { src: "images/actors/sukru-ozyildiz.jpg", name: "Şükrü Özyıldız" },
-        { src: "images/actors/ezgi-mola.jpg", name: "Ezgi Mola" },
-        { src: "images/actors/enis-arikan.jpg", name: "Enis Arıkan" }
-    ]
-    },
-  
+      { src: "images/actors/serenay-sarikaya.jpg", name: "Serenay Sarıkaya" },
+      { src: "images/actors/sukru-ozyildiz.jpg", name: "Şükrü Özyıldız" },
+      { src: "images/actors/ezgi-mola.jpg", name: "Ezgi Mola" },
+      { src: "images/actors/enis-arikan.jpg", name: "Enis Arıkan" },
+    ],
+  },
+
   opet: {
     title: "Opet",
     about: `
@@ -74,14 +73,11 @@ const projects = {
         <p><strong>Actor:</strong> Ege Erkal</p>
     `,
     gallery: [
-        { src: "images/projects/opet-project.jpg", title: "Film 2 Gallery 1" },
+      { src: "images/projects/opet-project.jpg", title: "Film 2 Gallery 1" },
     ],
-    actors: [
-        { src: "images/actors/ege-erkal.jpg", name: "Ege Erkal" }
-  
-    ]
-    },
-  
+    actors: [{ src: "images/actors/ege-erkal.jpg", name: "Ege Erkal" }],
+  },
+
   greenmile: {
     title: "Green Mile",
     about: `
@@ -93,18 +89,29 @@ const projects = {
   
     `,
     gallery: [
-        { src: "images/projects/greenmile-project.jpg", title: "Tiyatro 1 Gallery 1" },
-        { src: "images/projects/greenmile-project1.jpg", title: "Tiyatro 1 Gallery 1" },
-        { src: "images/projects/greenmile-project2.jpg", title: "Tiyatro 1 Gallery 1" }
-        
+      {
+        src: "images/projects/greenmile-project.jpg",
+        title: "Tiyatro 1 Gallery 1",
+      },
+      {
+        src: "images/projects/greenmile-project1.jpg",
+        title: "Tiyatro 1 Gallery 1",
+      },
+      {
+        src: "images/projects/greenmile-project2.jpg",
+        title: "Tiyatro 1 Gallery 1",
+      },
     ],
     actors: [
-        { src: "images/actors/tom-hanks.jpg", name: "Tom Hanks" },
-        { src: "images/actors/michael-clarke.jpg", name: "Michael Clarke Duncan" }, 
-        { src: "images/actors/david-morse.jpg", name: "David Morse" }
-    ]
-    },
-  
+      { src: "images/actors/tom-hanks.jpg", name: "Tom Hanks" },
+      {
+        src: "images/actors/michael-clarke.jpg",
+        name: "Michael Clarke Duncan",
+      },
+      { src: "images/actors/david-morse.jpg", name: "David Morse" },
+    ],
+  },
+
   friends: {
     title: "Friends",
     about: `
@@ -115,23 +122,37 @@ const projects = {
         <p><strong>Actors:</strong> 	Jennifer Aniston,Courtney Cox,Lisa Kudrow,Matthew Perry,Matt LeBlanc,David Schwimmer</p>
     `,
     gallery: [
-        { src: "images/projects/friends-project.jpg", title: "Reklam 2 Gallery 1" },
-        { src: "images/projects/friends-project1.jpg", title: "Reklam 2 Gallery 1" },
-        { src: "images/projects/friends-project2.jpg", title: "Reklam 2 Gallery 1" },
-        { src: "images/projects/friends-project3.jpg", title: "Reklam 2 Gallery 1" },
-        { src: "images/projects/friends-project4.jpg", title: "Reklam 2 Gallery 1" }
+      {
+        src: "images/projects/friends-project.jpg",
+        title: "Reklam 2 Gallery 1",
+      },
+      {
+        src: "images/projects/friends-project1.jpg",
+        title: "Reklam 2 Gallery 1",
+      },
+      {
+        src: "images/projects/friends-project2.jpg",
+        title: "Reklam 2 Gallery 1",
+      },
+      {
+        src: "images/projects/friends-project3.jpg",
+        title: "Reklam 2 Gallery 1",
+      },
+      {
+        src: "images/projects/friends-project4.jpg",
+        title: "Reklam 2 Gallery 1",
+      },
     ],
     actors: [
-        { src: "images/actors/jennifer-aniston.jpg", name: "Jennifer Aniston" },
-        { src: "images/actors/courtney-cox.jpg", name: "Courtney Cox" },
-        { src: "images/actors/lisa-kudrow.jpg", name: "Lisa Kudrow" },
-        { src: "images/actors/matthew-perry.jpg", name: "Matthew Perry" },
-        { src: "images/actors/matt-leblanc.jpg", name: "Matt LeBlack" },
-        { src: "images/actors/david-schwimmer.jpg", name: "David Schwimmer" },
-        
-    ]
-    },
-  
+      { src: "images/actors/jennifer-aniston.jpg", name: "Jennifer Aniston" },
+      { src: "images/actors/courtney-cox.jpg", name: "Courtney Cox" },
+      { src: "images/actors/lisa-kudrow.jpg", name: "Lisa Kudrow" },
+      { src: "images/actors/matthew-perry.jpg", name: "Matthew Perry" },
+      { src: "images/actors/matt-leblanc.jpg", name: "Matt LeBlack" },
+      { src: "images/actors/david-schwimmer.jpg", name: "David Schwimmer" },
+    ],
+  },
+
   chaplin: {
     title: "Chaplin",
     about: `
@@ -142,18 +163,23 @@ const projects = {
         <p><strong>Actors:</strong> Özgür Daniel Foster, Şebnem Dönmez, Emre Taşkıran, Murat Danacı, Defne Koldaş, Semih Ali Aksoy ve Çınar Yener </p>
     `,
     gallery: [
-        { src: "images/projects/chaplin-project.jpg", title: "Dizi 2 Gallery 1" },
-        { src: "images/projects/chaplin-project1.jpg", title: "Dizi 2 Gallery 2" },
-        { src: "images/projects/chaplin-project2.jpg", title: "Dizi 2 Gallery 2" }
+      { src: "images/projects/chaplin-project.jpg", title: "Dizi 2 Gallery 1" },
+      {
+        src: "images/projects/chaplin-project1.jpg",
+        title: "Dizi 2 Gallery 2",
+      },
+      {
+        src: "images/projects/chaplin-project2.jpg",
+        title: "Dizi 2 Gallery 2",
+      },
     ],
     actors: [
-        { src: "images/actors/daniel-foster.jpg", name: "Özgür Daniel Foster" },
-        { src: "images/actors/sebnem-donmez.jpg", name: "Şebnem Dönmez" },
-        { src: "images/actors/murat-danaci.jpg", name: "Murat Danacı" }
-        
-    ]
-    },
-  
+      { src: "images/actors/daniel-foster.jpg", name: "Özgür Daniel Foster" },
+      { src: "images/actors/sebnem-donmez.jpg", name: "Şebnem Dönmez" },
+      { src: "images/actors/murat-danaci.jpg", name: "Murat Danacı" },
+    ],
+  },
+
   bepanthol: {
     title: "Bepanthol",
     about: `
@@ -162,55 +188,75 @@ const projects = {
         <p><strong>Actor:</strong> Leyla Feray</p>
     `,
     gallery: [
-        { src: "images/projects/bepanthol_leyla_feray.jpg", title: "Film 3 Gallery 1" },
-        { src: "images/projects/bepanthol_leyla_feray2.jpg", title: "Film 3 Gallery 2" }
+      {
+        src: "images/projects/bepanthol_leyla_feray.jpg",
+        title: "Film 3 Gallery 1",
+      },
+      {
+        src: "images/projects/bepanthol_leyla_feray2.jpg",
+        title: "Film 3 Gallery 2",
+      },
     ],
-    actors: [
-        { src: "images/actors/leyla-feray.jpg", name: "Leyla Feray  " }
-    ]
-    }
-  };
-  
-  
-    function getProjectId() {
-        const params = new URLSearchParams(window.location.search);
-        return params.get('project');
-    }
-  
-    function loadProject() {
-        const projectId = getProjectId();
-        const project = projects[projectId];
-  
-        if (!project) {
-          document.querySelector(".project-detail").innerHTML = "<h2>Project not found!</h2>";
-          return;
-        }
-  
-        // Başlığı yükle
-        document.getElementById("project-title").innerText = project.title;
-  
-        // About sekmesini yükle
-        document.getElementById("about").innerHTML = project.about;
-  
-        // Gallery sekmesini yükle
-        document.getElementById("gallery").innerHTML = project.gallery.map(img => `
-          <a href="${img.src}" data-lightbox="project-gallery" data-title="${img.title}">
-            <img src="${img.src}" alt="${img.title}">
-          </a>
-        `).join('');
-  
-        // Actors sekmesini yükle
-        document.getElementById("actors").innerHTML = project.actors.map(actor => `
-          <div class="actor-card">
-            <img src="${actor.src}" alt="${actor.name}">
-            <p>${actor.name}</p>
-          </div>
-        `).join('');
-  
-        // Tabs çalıştır
-        $("#tabs").tabs();
-    }
-  
-$(function() {
-        loadProject();
-});
+    actors: [{ src: "images/actors/leyla-feray.jpg", name: "Leyla Feray  " }],
+  },
+};
+
+function getProjectId() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("project")?.toLowerCase(); // Case-insensitive matching
+}
+
+function renderGallery(gallery) {
+  return gallery
+    .map(
+      (img) => `
+        <a href="${img.src}" data-lightbox="project-gallery" data-title="${img.title}">
+          <img src="${img.src}" alt="${img.title}">
+        </a>`
+    )
+    .join("");
+}
+
+function renderActors(actors) {
+  return actors
+    .map(
+      (actor) => `
+        <div class="actor-card">
+          <img src="${actor.src}" alt="${actor.name}">
+          <p>${actor.name}</p>
+        </div>`
+    )
+    .join("");
+}
+
+function loadProject() {
+  const projectId = getProjectId();
+  const project = projects[projectId];
+
+  if (!project) {
+    document.querySelector(".project-detail").innerHTML =
+      "<h2>Project not found!</h2>";
+    return;
+  }
+
+  // Set title
+  const titleEl = document.getElementById("project-title");
+  if (titleEl) titleEl.innerText = project.title;
+
+  // Set about section
+  const aboutEl = document.getElementById("about");
+  if (aboutEl) aboutEl.innerHTML = project.about;
+
+  // Render gallery
+  const galleryEl = document.getElementById("gallery");
+  if (galleryEl) galleryEl.innerHTML = renderGallery(project.gallery);
+
+  // Render actors
+  const actorsEl = document.getElementById("actors");
+  if (actorsEl) actorsEl.innerHTML = renderActors(project.actors);
+
+  // Activate jQuery UI tabs
+  $("#tabs").tabs();
+}
+
+$(loadProject); // Shorthand for DOMContentLoaded

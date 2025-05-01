@@ -1,67 +1,77 @@
+/* Overall container for the registration page */
 .register-page-container {
-    display: flex; /* Uses flexbox for layout */
-    flex-direction: column; /* Arranges elements vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    padding: 50px 0; /* Adds vertical padding */
-}
-
-.register-block-container {
-    display: flex; /* Uses flexbox */
-    flex-direction: column; /* Arranges elements vertically */
-    justify-content: center; /* Centers content vertically */
-    padding: 75px; /* Adds padding for spacing */
-    border: 1px solid #ccc; /* Adds a light gray border */
-}
-
-.register-form-logo {
-    width: 150px; /* Sets a fixed width for the logo */
-    margin: 0 auto; /* Centers the logo horizontally */
-    margin-bottom: 40px; /* Adds spacing below the logo */
-}
-
-.form-input {
-    display: flex; /* Uses flexbox for input field alignment */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Aligns elements vertically */
-    gap: 10px; /* Adds spacing between input elements */
-    width: 300px; /* Sets a fixed width */
-    margin: 10px 0; /* Adds vertical spacing */
-}
-
-.form-input input {
-    float: right; /* Aligns the input to the right */
-    padding: 5px 10px; /* Adds inner spacing */
-    border: 1px solid #ccc; /* Adds a light border */
-}
-
-.form-bottom {
-    display: flex; /* Uses flexbox */
-    justify-content: space-between; /* Spaces elements evenly */
-    flex-direction: column; /* Arranges elements vertically */
-    align-items: center; /* Centers elements horizontally */
-    margin-top: 20px; /* Adds spacing above the form bottom */
-}
-
-.form-bottom button {
-    padding: 10px 25px; /* Increases button size for better usability */
-    margin-bottom: 15px; /* Adds spacing below the button */
-    border: 1px solid #ccc; /* Adds a subtle border */
-    cursor: pointer; /* Changes cursor to indicate interactivity */
-    font-weight: bold; /* Makes button text bold */
-}
-
-.login-link-block {
-    display: flex; /* Uses flexbox */
-    justify-content: center; /* Centers elements horizontally */
-    align-items: center; /* Aligns elements vertically */
-}
-
-.login-link-block a {
-    display: flex; /* Uses flexbox */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
-    flex-direction: column; /* Arranges content vertically */
-    border: 1px solid #ccc; /* Adds a border */
-    padding: 25px 110px; /* Expands clickable area for better UX */
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  /* Block containing the form content */
+  .register-block-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Logo above the form */
+  .register-form-logo {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  /* Wrapper for each form input row */
+  .form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    margin: 10px 0;
+  }
+  
+  /* Input field styling */
+  .form-input input {
+    float: right;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Bottom section of the form with button and link */
+  .form-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* column for mobile friendliness */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Submit button styling */
+  .form-bottom button {
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Login link section */
+  .login-link-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Link styled as button */
+  .login-link-block a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 25px 110px;
+  }
+  

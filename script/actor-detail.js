@@ -9,15 +9,14 @@ const actors = {
     gallery: [
       { src: "images/projects/ed-actors1.jpg", title: "Gallery 1" },
       { src: "images/projects/ed-actors2.jpg", title: "Gallery 2" },
-      { src: "images/projects/ed-actors3.jpg", title: "Gallery 3" }
+      { src: "images/projects/ed-actors3.jpg", title: "Gallery 3" },
     ],
     projects: [
       { name: "Married with Children" },
       { name: "Modern Family" },
       { name: "Wreck-It Ralph" },
       { name: "Bone Collector" },
-
-    ]
+    ],
   },
   leylaferay: {
     title: "Leyla Feray",
@@ -32,14 +31,14 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     `,
     gallery: [
       { src: "images/projects/leyla-feray-actors1.jpg", title: "Gallery 1" },
-      { src: "images/projects/leyla-feray-actors2.jpg", title: "Gallery 2" }
+      { src: "images/projects/leyla-feray-actors2.jpg", title: "Gallery 2" },
     ],
     projects: [
-      {  name: "Bepanthol Commercial" },
-      {  name: "Kardeşim Benim 2" },
-      {  name: "Uyanış Büyük Selçuklu" },
-      {  name: "İkimizin Sırrı" }
-    ]
+      { name: "Bepanthol Commercial" },
+      { name: "Kardeşim Benim 2" },
+      { name: "Uyanış Büyük Selçuklu" },
+      { name: "İkimizin Sırrı" },
+    ],
   },
   tomhanks: {
     title: "Tom Hanks",
@@ -50,7 +49,7 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     `,
     gallery: [
       { src: "images/projects/tom-hanks-actors1.jpg", title: "Gallery 1" },
-      { src: "images/projects/tom-hanks-actors2.jpg", title: "Gallery 2" }
+      { src: "images/projects/tom-hanks-actors2.jpg", title: "Gallery 2" },
     ],
     projects: [
       { name: "The Green Mile" },
@@ -58,7 +57,7 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
       { name: "New Life" },
       { name: "Philadelphia" },
       { name: "Big" },
-    ]
+    ],
   },
   juliebowen: {
     title: "Julia Bowen",
@@ -71,15 +70,14 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     `,
     gallery: [
       { src: "images/projects/julie-bowen-actors1.jpg", title: "Gallery 1" },
-      { src: "images/projects/julie-bowen-actors2.jpg", title: "Gallery 2" }
+      { src: "images/projects/julie-bowen-actors2.jpg", title: "Gallery 2" },
     ],
     projects: [
       { name: "Modern Family" },
       { name: "Ed" },
       { name: "Happy Gilmore" },
       { name: "The Fallout" },
-
-    ]
+    ],
   },
   tyburrell: {
     title: "Ty Burrell",
@@ -90,15 +88,14 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     `,
     gallery: [
       { src: "images/projects/ty-burrel-actors1.jpg", title: "Gallery 1" },
-      { src: "images/projects/ty-burrel-actors2.jpg", title: "Gallery 2" }
+      { src: "images/projects/ty-burrel-actors2.jpg", title: "Gallery 2" },
     ],
     projects: [
       { name: "Modern Family" },
       { name: "Finding Dory" },
       { name: "The Incredible Hulk" },
       { name: "Muppets Most Wanted" },
-
-    ]
+    ],
   },
   jessetylerferguson: {
     title: "Jesse Tyler Ferguson",
@@ -109,16 +106,14 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     `,
     gallery: [
       { src: "images/projects/jesse-actors1.jpg", title: "Gallery 1" },
-      { src: "images/projects/jesse-actors2.jpg", title: "Gallery 2" }
-    
+      { src: "images/projects/jesse-actors2.jpg", title: "Gallery 2" },
     ],
     projects: [
-      {  name: "Modern Family" },
-      {  name: "Cocaine Bear" },
-      {  name: "Ice Age: Collision Course" },
-      {  name: "Untraceable" }
-
-    ]
+      { name: "Modern Family" },
+      { name: "Cocaine Bear" },
+      { name: "Ice Age: Collision Course" },
+      { name: "Untraceable" },
+    ],
   },
   emiliaclarke: {
     title: "Emilia Clarke",
@@ -130,14 +125,14 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
     gallery: [
       { src: "images/projects/emilia-clarke-actors1.jpg", title: "Gallery 1" },
       { src: "images/projects/emilia-clarke-actors2.jpg", title: "Gallery 2" },
-      { src: "images/projects/emilia-clarke-actors3.jpg", title: "Gallery 2" }
+      { src: "images/projects/emilia-clarke-actors3.jpg", title: "Gallery 2" },
     ],
     projects: [
-      {  name: "Game of Thrones" },
-      {  name: "Me Before You" },
-      {  name: "Terminator Genisys" },
-      {  name: "Above Suspicion" }
-    ]
+      { name: "Game of Thrones" },
+      { name: "Me Before You" },
+      { name: "Terminator Genisys" },
+      { name: "Above Suspicion" },
+    ],
   },
   sofiavergara: {
     title: "Sofia Vergara",
@@ -157,46 +152,54 @@ Leyla Feray, lastly played the role of "Leyla" in the long feature film "Kardesi
       { name: "America's God Talent" },
       { name: "Chef" },
       { name: "Hot Pursuit" },
-    ]
-  }
+    ],
+  },
 };
 
+// Get the actor ID from the URL (e.g., ?actor=emiliaclarke)
 function getActorId() {
   const params = new URLSearchParams(window.location.search);
-  return params.get('actor');
+  return params.get("actor")?.toLowerCase(); // Normalize to lowercase
 }
 
 function loadActor() {
   const actorId = getActorId();
   const actor = actors[actorId];
 
+  // Handle invalid actor ID
   if (!actor) {
-    document.querySelector(".project-detail").innerHTML = "<h2>Actor not found!</h2>";
+    document.querySelector(".project-detail").innerHTML =
+      "<h2>Actor not found!</h2>";
     return;
   }
 
+  // Set actor title
   document.getElementById("actor-title").innerText = actor.title;
+
+  // Render biography
   document.getElementById("about").innerHTML = actor.about;
 
-  document.getElementById("gallery").innerHTML = actor.gallery.map(img => `
-    <a href="${img.src}" data-lightbox="actor-gallery" data-title="${img.title}">
-      <img src="${img.src}" alt="${img.title}">
-    </a>
-  `).join('');
+  // Render gallery
+  document.getElementById("gallery").innerHTML = actor.gallery
+    .map(
+      (img) => `
+        <a href="${img.src}" data-lightbox="actor-gallery" data-title="${img.title}">
+          <img src="${img.src}" alt="${img.title}">
+        </a>
+      `
+    )
+    .join("");
 
+  // Render projects
   document.getElementById("projects").innerHTML = `
     <ul>
-    ${actor.projects.map(project => `<li>${project.name}</li>`).join('')}
-
+      ${actor.projects.map((project) => `<li>${project.name}</li>`).join("")}
     </ul>
   `;
 
+  // Activate jQuery UI tabs
   $("#tabs").tabs();
 }
 
-$(document).ready(function() {
-  loadActor();
-});
-
-
-
+// Run on DOM ready
+$(document).ready(loadActor);

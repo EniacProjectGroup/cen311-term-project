@@ -1,63 +1,73 @@
+/* Container for the entire login page */
 .login-page-container {
-    display: flex; /* Uses flexbox for layout */
-    flex-direction: column; /* Arranges elements vertically */
-    justify-content: center; /* Centers elements vertically */
-    align-items: center; /* Centers elements horizontally */
-    padding: 50px 0; /* Adds vertical padding */
-}
-
-.login-block-container {
-    display: flex; /* Uses flexbox */
-    flex-direction: column; /* Arranges elements vertically */
-    justify-content: center; /* Centers content vertically */
-    padding: 75px; /* Adds spacing inside the block */
-    border: 1px solid #ccc; /* Adds a light gray border for structure */
-}
-
-.login-form-logo {
-    width: 150px; /* Sets the logo width */
-    margin: 0 auto; /* Centers the logo horizontally */
-    margin-bottom: 40px; /* Adds space below the logo */
-}
-
-.form-input {
-    display: flex; /* Uses flexbox for input fields */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Aligns items vertically */
-    gap: 10px; /* Adds spacing between elements */
-    width: 300px; /* Sets a fixed width for input containers */
-    margin: 10px 0; /* Adds vertical spacing */
-}
-
-.form-input input {
-    float: right; /* Aligns input to the right */
-    padding: 5px 10px; /* Adds inner spacing */
-    border: 1px solid #ccc; /* Adds a light border for clarity */
-}
-
-.form-bottom {
-    display: flex; /* Uses flexbox for layout */
-    justify-content: space-between; /* Spaces elements evenly */
-    flex-direction: column; /* Arranges elements vertically */
-    align-items: center; /* Centers elements horizontally */
-    margin-top: 20px; /* Adds spacing above the form bottom section */
-}
-
-.form-bottom button {
-    padding: 10px 25px; /* Adds padding for a comfortable click area */
-    margin-bottom: 15px; /* Adds space between button and next element */
-    border: 1px solid #ccc; /* Adds a subtle border */
-    cursor: pointer; /* Changes cursor to indicate interactivity */
-    font-weight: bold; /* Makes button text stand out */
-}
-
-.register-link-block {
-    display: flex; /* Uses flexbox */
-    justify-content: center; /* Centers elements horizontally */
-    align-items: center; /* Aligns elements vertically */
-}
-
-.register-link-block a {
-    border: 1px solid #ccc; /* Adds a border around the link block */
-    padding: 25px 110px; /* Adds padding to increase clickable area */
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  /* Block containing the login form */
+  .login-block-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Logo above the login form */
+  .login-form-logo {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  /* Row wrapper for label + input */
+  .form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    margin: 10px 0;
+  }
+  
+  /* Input field styles */
+  .form-input input {
+    float: right; /* optional — can be removed if not using labels inline */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Section containing button + register link */
+  .form-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Login button styling */
+  .form-bottom button {
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Wrapper for register redirect */
+  .register-link-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styled register link */
+  .register-link-block a {
+    border: 1px solid #ccc;
+    padding: 25px 110px;
+  }
+  

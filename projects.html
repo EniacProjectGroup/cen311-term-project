@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects</title>
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/projects-page.css">
+    <!-- Global and project-specific styles -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/projects-page.css" />
 
+    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.min.css">
-
+    <!-- Isotope plugin for filtering -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.min.css"
+    />
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 
+    <!-- Custom layout injection script (probably adds nav/footer) -->
     <script src="script/add-layout.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <main>
+      <!-- Dynamic header content (likely injected by add-layout.js) -->
+      <div id="header"></div>
 
-    <div id="header"></div>
-
-    <section class="projects-page">
+      <!-- Projects Section -->
+      <section class="projects-page">
         <h1>Projects</h1>
 
+        <!-- Category filter buttons (used by Isotope) -->
         <div class="project-categories">
-            <a href="#" data-filter="*">All</a>
-            <a href="#" data-filter=".movies">Movies</a>
-            <a href="#" data-filter=".series">Series</a>
-            <a href="#" data-filter=".theaters">Theaters</a>
-            <a href="#" data-filter=".commercials">Commercials</a>
+          <a href="#" data-filter="*">All</a>
+          <a href="#" data-filter=".movies">Movies</a>
+          <a href="#" data-filter=".series">Series</a>
+          <a href="#" data-filter=".theaters">Theaters</a>
+          <a href="#" data-filter=".commercials">Commercials</a>
         </div>
 
+        <!-- Grid of project cards -->
         <div class="projects-grid">
             <div class="project-card movies">
                 <a href="project-detail.html?project=fallout">

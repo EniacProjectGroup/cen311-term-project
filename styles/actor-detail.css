@@ -1,3 +1,4 @@
+/* Main container for actor detail view */
 .actor-detail {
   padding: 40px;
   width: 80%;
@@ -7,6 +8,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Page heading styling */
 .page-heading {
   text-align: center;
   margin-bottom: 30px;
@@ -17,7 +19,7 @@
   color: #333;
 }
 
-/* Aktör Bilgileri */
+/* Actor bio section with photo and text side by side */
 .actor-info {
   display: flex;
   justify-content: space-around;
@@ -25,6 +27,7 @@
   margin-bottom: 40px;
 }
 
+/* Circular actor image */
 .actor-info img {
   width: 250px;
   height: 250px;
@@ -33,6 +36,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Text section next to the image */
 .actor-info .actor-details {
   flex: 1;
   padding-left: 20px;
@@ -50,7 +54,7 @@
   line-height: 1.6;
 }
 
-/* Sekmeler */
+/* Tab navigation (jQuery UI) */
 #tabs {
   margin-top: 20px;
 }
@@ -77,13 +81,14 @@
   color: #333;
 }
 
+/* Active tab highlight */
 #tabs .ui-tabs-active a {
   color: #fff;
   background: #333;
   border-radius: 20px;
 }
 
-/* Galeri */
+/* Image gallery styles */
 .gallery {
   display: flex;
   gap: 20px;
@@ -104,21 +109,22 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Aktörler */
+/* Reused actor cards grid (e.g., for related actors or projects) */
 .actors-grid {
-  display: flex;          
-  gap: 20px;               
-  justify-content: center; 
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
+/* Actor card */
 .actor-card {
   text-align: center;
-  width: 200px;            
-  flex: 1 0 200px;        
+  width: 200px;
+  flex: 1 0 200px;
 }
 
 .actor-card img {
-  width: 150px;            
+  width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;

@@ -1,40 +1,47 @@
+/* Carousel container */
 .carousel {
-    display: flex; /* Uses flexbox for layout */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    background-color: #f0f0f0; /* Light gray background for contrast */
-    height: 400px; /* Sets a fixed height for the carousel */
-    gap: 15px; /* Adds space between the elements inside the carousel */
-} 
-
-.blue-box {
-    width: 800px; /* Sets the width of the main carousel content */
-    height: 300px; /* Sets the height of the main carousel content */
-    background-color: rgb(118, 118, 128); /* Sets a dark grayish background color */
-    padding: 50px 0; /* Adds vertical padding */
-}
-
-.carousel-btn {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for the buttons */
-    color: white; /* White text color for contrast */
-    border: none; /* Removes default button border */
-    padding: 10px 15px; /* Adds padding for button size */
-    font-size: 24px; /* Increases button icon size */
-    cursor: pointer; /* Changes cursor to pointer for better UX */
-    border-radius: 5px; /* Rounds the button edges */
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.8); /* Darkens button background on hover */
-}
-
-.comments {
-    width: 85%; /* Sets the section width to 85% of the parent container */
-    margin: 0 auto; /* Centers the section horizontally */
-    text-align: center; /* Aligns text to the center */
-    padding: 30px 0; /* Adds vertical spacing */
-}
-
-.comment {
-    margin-bottom: 25px; /* Adds space between individual comments */
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 400px;
+    gap: 15px;
+  }
+  
+  /* Optional content block for demo or layout testing */
+  .blue-box {
+    width: 800px;
+    height: 300px;
+    background-color: rgb(118, 118, 128);
+    padding: 50px 0;
+  }
+  
+  /* Carousel navigation buttons */
+  .carousel-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect for carousel buttons */
+  .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Comments section below carousel */
+  .comments {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  /* Individual comment blocks */
+  .comment {
+    margin-bottom: 25px;
+  }
+  

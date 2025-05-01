@@ -1,12 +1,15 @@
+/* Overall layout for the actor listing page */
 .actor-page {
   padding: 40px;
   text-align: center;
 }
 
+/* Container for filter links (if applicable) */
 .actor-categories {
   margin: 20px 0;
 }
 
+/* Styling for each category link */
 .actor-categories a {
   margin: 0 15px;
   text-decoration: none;
@@ -16,18 +19,21 @@
   transition: color 0.3s;
 }
 
+/* Hover effect for category links */
 .actor-categories a:hover {
   color: #000;
 }
 
+/* Grid layout for actor cards */
 .actors-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 30px;
   margin-top: 30px;
   justify-items: center;
 }
 
+/* Card for each actor */
 .actor-card {
   width: 240px;
   height: 400px;
@@ -38,11 +44,13 @@
   transition: transform 0.3s;
 }
 
+/* Hover effect for actor cards */
 .actor-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* Actor image */
 .actor-card img {
   width: 100%;
   height: 350px;
@@ -50,6 +58,7 @@
   border-bottom: 1px solid #ddd;
 }
 
+/* Actor name below the image */
 .actor-card h3 {
   margin-top: 10px;
   color: #333;

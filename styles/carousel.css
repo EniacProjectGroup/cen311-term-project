@@ -1,39 +1,44 @@
+/* Wrapper around the entire carousel */
 .carousel-wrapper {
   width: 80%;
-  margin: 40px auto 20px auto; 
-  overflow: hidden;
+  margin: 40px auto 20px auto;
+  overflow: hidden; /* Prevents overflow during slide transitions */
 }
 
+/* Carousel image styling */
 .carousel img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: cover; /* Ensures image fills area without distortion */
+  border-radius: 10px; /* Rounded corners */
 }
 
-/* Dots */
+/* Dots navigation container */
 .slick-dots {
   margin-top: 10px;
   text-align: center;
 }
 
+/* Individual dot item */
 .slick-dots li {
   display: inline-block;
   margin: 0 5px;
 }
 
+/* Default dot appearance */
 .slick-dots li button:before {
   font-size: 12px;
   color: #bbb;
   transition: all 0.3s ease;
 }
 
+/* Active dot appearance */
 .slick-dots li.slick-active button:before {
   color: #333;
-  font-size: 16px; /* Aktif dot büyüyor */
+  font-size: 16px;
 }
 
-/* Oklar */
+/* Arrows (left and right) */
 .slick-prev:before,
 .slick-next:before {
   font-size: 30px;
@@ -41,8 +46,9 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for arrows */
 .slick-prev:hover:before,
 .slick-next:hover:before {
-  transform: scale(1.3); /* Hover olunca büyüyor */
+  transform: scale(1.3); /* Slight zoom on hover */
   color: #000;
 }

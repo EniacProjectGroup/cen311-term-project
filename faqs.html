@@ -1,87 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Global styles -->
-    <link rel="stylesheet" href="styles/global.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/faqs-page.css" />
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <title>Casting Agency</title>
+</head>
+<body>
+  <main>
+    <div class="page-heading"><h1>FAQs</h1></div>
+    <div class="container">
+      <div id="accordion">
+        <h3>1. What does your management service include exactly?</h3>
+        <div>
+          <p>We offer full support in artist and influencer management, brand collaborations, communication and image consultancy, event planning, and contract follow-ups.</p>
+        </div>
 
-    <!-- Page specific styles -->
-    <link rel="stylesheet" href="styles/faqs-page.css" />
-    <title>Casting Agency</title>
-  </head>
-  <body>
-    <main>
-      <!-- Page Heading -->
-      <div class="page-heading"><h1>FAQs</h1></div>
-      <div class="container">
-        <!-- Frequently Asked Questions -->
-        <div class="faqs-container">
-          <!-- Accordion container -->
-          <div class="accordion">
-            <!-- Accordion button -->
-            <button class="accordion-button">1. What does your management service include exactly?</button>
-            <!-- Hidden panel when not selected -->
-            <div class="panel">
-              <p>
-                We offer full support in artist and influencer management, brand collaborations, communication and image consultancy, event planning, and contract follow-ups.
-              </p>
-            </div>
-          </div>
+        <h3>2. Can I work with you as a new talent?</h3>
+        <div>
+          <p>Absolutely! We’re here to support your career with projects that suit your potential and style. Just fill out our application form and we’ll take it from there.</p>
+        </div>
 
-          <div class="accordion">
-            <button class="accordion-button">2. Can I work with you as a new talent?</button>
-            <div class="panel">
-              <p>
-                Absolutely! We’re here to support your career with projects that suit your potential and style. Just fill out our application form and we’ll take it from there.
-              </p>
-            </div>
-          </div>
+        <h3>3. Do you only work with famous people?</h3>
+        <div>
+          <p>Not at all. We also work with emerging talents who believe in their potential. Success isn’t just about fame—it’s about smart direction and hard work.</p>
+        </div>
 
-          <div class="accordion">
-            <button class="accordion-button">3. Do you only work with famous people?</button>
-            <div class="panel">
-              <p>
-                Not at all. We also work with emerging talents who believe in their potential. Success isn’t just about fame—it’s about smart direction and hard work.
-              </p>
-            </div>
-          </div>
-          <div class="accordion">
-            <button class="accordion-button">4. Can you help our brand connect with influencers?</button>
-            <div class="panel">
-              <p>
-                Definitely! We find the right content creators for your target audience and plan your campaign from start to finish together.
-              </p>
-            </div>
-          </div>
-          <div class="accordion">
-            <button class="accordion-button">5. How can I contact you?</button>
-            <div class="panel">
-              <p>
-                You can fill out the contact form on our website, send us an email, or reach out via our social media channels. We’ll get back to you as soon as possible.
-              </p>
-            </div>
-          </div>
+        <h3>4. Can you help our brand connect with influencers?</h3>
+        <div>
+          <p>Definitely! We find the right content creators for your target audience and plan your campaign from start to finish together.</p>
+        </div>
+
+        <h3>5. How can I contact you?</h3>
+        <div>
+          <p>You can fill out the contact form on our website, send us an email, or reach out via our social media channels. We’ll get back to you as soon as possible.</p>
         </div>
       </div>
-    </main>
-    <script>
-      var acc = document.getElementsByClassName("accordion-button");
-      var i;
+    </div>
+  </main>
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
-  </body>
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="./script/add-layout.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="script/add-layout.js"></script>
+  <script src="script/faqs-accordion.js"></script>
+</body>
 </html>

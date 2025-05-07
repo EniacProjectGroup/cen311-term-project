@@ -1,4 +1,3 @@
-/* Main container for actor detail view */
 .actor-detail {
   padding: 40px;
   width: 80%;
@@ -8,7 +7,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Page heading styling */
 .page-heading {
   text-align: center;
   margin-bottom: 30px;
@@ -19,7 +17,7 @@
   color: #333;
 }
 
-/* Actor bio section with photo and text side by side */
+/* Actor info */
 .actor-info {
   display: flex;
   justify-content: space-around;
@@ -27,7 +25,6 @@
   margin-bottom: 40px;
 }
 
-/* Circular actor image */
 .actor-info img {
   width: 250px;
   height: 250px;
@@ -36,7 +33,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Text section next to the image */
 .actor-info .actor-details {
   flex: 1;
   padding-left: 20px;
@@ -54,7 +50,7 @@
   line-height: 1.6;
 }
 
-/* Tab navigation (jQuery UI) */
+/* tabs part*/
 #tabs {
   margin-top: 20px;
 }
@@ -81,14 +77,13 @@
   color: #333;
 }
 
-/* Active tab highlight */
 #tabs .ui-tabs-active a {
   color: #fff;
   background: #333;
   border-radius: 20px;
 }
 
-/* Image gallery styles */
+/* Gallery */
 .gallery {
   display: flex;
   gap: 20px;
@@ -109,22 +104,21 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Reused actor cards grid (e.g., for related actors or projects) */
+/* Actors */
 .actors-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  display: flex;          
+  gap: 20px;               
+  justify-content: center; 
 }
 
-/* Actor card */
 .actor-card {
   text-align: center;
-  width: 200px;
-  flex: 1 0 200px;
+  width: 200px;            
+  flex: 1 0 200px;        
 }
 
 .actor-card img {
-  width: 150px;
+  width: 150px;            
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
@@ -138,4 +132,30 @@
   margin-top: 10px;
   font-size: 1.2rem;
   color: #333;
+}
+.biography-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.biography-box button {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.biography-box button:hover {
+  background-color: #555;
+}
+.biography-box #full-bio {
+  display: none;
+}
+.actor-image {
+  width: 200px;
 }

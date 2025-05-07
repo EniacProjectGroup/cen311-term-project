@@ -1,100 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Casting Agency</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casting Agency</title>
 
-    <!-- Global and page-specific CSS -->
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/landing-page.css" />
-    <link rel="stylesheet" href="styles/actors-page.css" />
-    <link rel="stylesheet" href="styles/projects-page.css" />
-    <link rel="stylesheet" href="styles/carousel.css" />
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/landing-page.css" />
+  <link rel="stylesheet" href="styles/actors-page.css" />
+  <link rel="stylesheet" href="styles/projects-page.css" />
+  <link rel="stylesheet" href="styles/carousel.css" />
 
-    <!-- Slick carousel CSS for slider functionality -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-  </head>
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
 
-  <body>
-    <main>
-      <!-- Image carousel section -->
-      <div class="carousel-wrapper">
-        <div class="carousel">
-          <img src="images/actors/actors1.jpg" alt="Actor 1" />
-          <img src="images/actors/actors2.jpg" alt="Actor 2" />
-          <img src="images/actors/actors3.jpg" alt="Actor 3" />
+<body>
+  <main>
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="images/actors/actors1.jpg" alt="Image 2">
+        <img src="images/actors/actors2.jpg" alt="Image 3">
+        <img src="images/actors/actors3.jpg" alt="Image 3">
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="comments">
+        <div class="comment">
+          <h3><strong>Who We Are?</strong></h3>
+          <p>Established in 2025, MS Cast management company is an agency that builds strong connections between artists, influencer, and brands, drawing on years of experience.</p>
+        <div class="comment">
+          <h3><strong>Our Vision</strong></h3>
+          <p>To be a leading management company in the drama and cinema industry with our innovative and actor-focused approach. To elevate industry standards by representing nationally and internationally recognized talents, and to contribute to the global success  actors. By rapidly adapting to the changing dynamics of the digitalizing world, we aim to carry our actors' careers to sustainable success and to be a long-lasting, reliable business partner in the industry..</p>
         </div>
-      </div>
+        <div class="comment">
+          <h3><strong>Our Mission</strong></h3>
+          <p>●To discover talented actors, unlock their potential, and manage their careers with a strategic approach.</p>
+          <p>●To establish transparent and strong relationships with producers, directors, and other stakeholders in the industry, creating the most suitable projects for our actors..</p>
+          <p>●To earn the trust of our actors and develop long-term collaborations with an ethical, honest, and professional service approach.</p>
+          <p>●To continuously learn and evolve, keeping up with the innovations in the industry to offer our actors the most up-to-date and effective strategies..</p>
+        </div>
+      </section>
+    </div>
+  </main>
 
-      <!-- Introductory text content section -->
-      <div class="container">
-        <section class="comments">
-          <!-- Who We Are -->
-          <div class="comment">
-            <h3><strong>Who We Are?</strong></h3>
-            <p>
-              Established in 2025, MS Cast management company is an agency that
-              builds strong connections between artists, influencers, and
-              brands, drawing on years of experience.
-            </p>
-          </div>
+  <!-- jQuery ve Slick Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-          <!-- Our Vision -->
-          <div class="comment">
-            <h3><strong>Our Vision</strong></h3>
-            <p>
-              To be a leading management company in the drama and cinema
-              industry with our innovative and actor-focused approach. To
-              elevate industry standards by representing nationally and
-              internationally recognized talents, and to contribute to the
-              global success of actors. By rapidly adapting to the changing
-              dynamics of the digitalizing world, we aim to carry our actors'
-              careers to sustainable success and to be a long-lasting, reliable
-              business partner in the industry.
-            </p>
-          </div>
+  <!-- Layout Script -->
+  <script src="script/add-layout.js"></script>
 
-          <!-- Our Mission -->
-          <div class="comment">
-            <h3><strong>Our Mission</strong></h3>
-            <p>
-              ● To discover talented actors, unlock their potential, and manage
-              their careers with a strategic approach.
-            </p>
-            <p>
-              ● To establish transparent and strong relationships with
-              producers, directors, and other stakeholders in the industry,
-              creating the most suitable projects for our actors.
-            </p>
-            <p>
-              ● To earn the trust of our actors and develop long-term
-              collaborations with an ethical, honest, and professional service
-              approach.
-            </p>
-            <p>
-              ● To continuously learn and evolve, keeping up with the
-              innovations in the industry to offer our actors the most
-              up-to-date and effective strategies.
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <!-- jQuery and plugins -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <!-- Custom JS files -->
-    <script src="script/add-layout.js"></script>
-    <script src="script/carousel.js"></script>
-  </body>
+  <!-- Carousel Script -->
+  <script src="script/carousel.js"></script>
+</body>
 </html>

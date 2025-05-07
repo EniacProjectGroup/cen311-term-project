@@ -1,26 +1,25 @@
-$(document).ready(function () {
-  // Initialize Isotope on the grid with masonry layout
-  var iso = new Isotope(".projects-grid", {
-    itemSelector: ".project-card",
-    layoutMode: "masonry",
-    masonry: {
-      columnWidth: 270, // Sets base column width
-      gutter: 30, // Gap between items
-    },
-  });
+$(document).ready(function() {
+    // Isotope başlatma
+    var iso = new Isotope('.projects-grid', {
+        itemSelector: '.project-card', 
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: 270,
+            gutter: 30
+        }
+    });
 
-  // Handle filter clicks
-  $(".project-categories a").on("click", function (e) {
-    e.preventDefault(); // Prevent default anchor behavior
+    // Filtering functionality
+    $('.project-categories a').on('click', function(e) {
+        e.preventDefault();
+        var filterValue = $(this).attr('data-filter');
+        iso.arrange({ filter: filterValue });
 
-    var filterValue = $(this).attr("data-filter"); // Get filter class
-    iso.arrange({ filter: filterValue }); // Filter the grid
+        // set active filter
+        $('.project-categories a').removeClass('active');
+        $(this).addClass('active');
+    });
 
-    // Update active filter button UI
-    $(".project-categories a").removeClass("active");
-    $(this).addClass("active");
-  });
-
-  // Mark "All" filter as active by default
-  $('.project-categories a[data-filter="*"]').addClass("active");
+    // initially the "All" filter is active
+    $('.project-categories a[data-filter="*"]').addClass('active');
 });

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Masonry grid için
+    // Masonry grid
     var $grid = $('.actors-grid').masonry({
         itemSelector: '.actor-card',
         columnWidth: '.actor-card',
@@ -7,9 +7,9 @@ $(document).ready(function() {
         gutter: 20
     });
 
-    // Filtreleme işlevselliği
+    // Filtering functionality
     $('.filter-btn').on('click', function() {
-        // Aktif butonu güncelle
+        // update button
         $('.filter-btn').removeClass('active');
         $(this).addClass('active');
         
@@ -21,8 +21,7 @@ $(document).ready(function() {
             $('.actor-card').hide();
             $(filterValue).show();
         }
-        
-        // Masonry layout'u yeniden düzenle
+        // Reorganize the Masonry layout
         $grid.masonry('layout');
     });
 });

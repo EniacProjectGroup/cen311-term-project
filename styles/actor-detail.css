@@ -17,7 +17,7 @@
   color: #333;
 }
 
-/* Aktör Bilgileri */
+/* Actor info */
 .actor-info {
   display: flex;
   justify-content: space-around;
@@ -50,7 +50,7 @@
   line-height: 1.6;
 }
 
-/* Sekmeler */
+/* tabs part*/
 #tabs {
   margin-top: 20px;
 }
@@ -83,7 +83,7 @@
   border-radius: 20px;
 }
 
-/* Galeri */
+/* Gallery */
 .gallery {
   display: flex;
   gap: 20px;
@@ -104,7 +104,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Aktörler */
+/* Actors */
 .actors-grid {
   display: flex;          
   gap: 20px;               
@@ -132,4 +132,30 @@
   margin-top: 10px;
   font-size: 1.2rem;
   color: #333;
+}
+.biography-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.biography-box button {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.biography-box button:hover {
+  background-color: #555;
+}
+.biography-box #full-bio {
+  display: none;
+}
+.actor-image {
+  width: 200px;
 }

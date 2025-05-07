@@ -1,14 +1,14 @@
 $(document).ready(function() {
   $('.carousel').slick({
-    dots: true,                  // Altta küçük yuvarlaklar
-    infinite: true,               // Sonsuz döngü
-    speed: 500,                   // Geçiş süresi (ms)
-    slidesToShow: 1,              // Aynı anda kaç resim gösterilecek
-    slidesToScroll: 1,            // Geçişte kaç resim kayacak
-    arrows: true,                 // Sağ-sol oklar olsun
-    autoplay: true,               // Kendiliğinden geçsin
-    autoplaySpeed: 2000,          // 3 saniyede bir geçsin
-    pauseOnHover: true,           // Üzerine gelince duraklasın
-    adaptiveHeight: true          // Resme göre yükseklik ayarlasın
+    dots: true,          // Little circles at the bottom
+    infinite: true,      // Infinite loop
+    speed: 500,          // Transition speed (ms)
+    slidesToShow: 1,     // How many images to show at once
+    slidesToScroll: 1,   // How many images to scroll on transition
+    arrows: true,        // Show right-left arrows
+    autoplay: true,      // Automatically slide
+    autoplaySpeed: 2000, // Slide every 2 seconds
+    pauseOnHover: true,  // Pause on hover
+    adaptiveHeight: true // Adjust height according to the image
   });
 });

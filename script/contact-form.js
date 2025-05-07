@@ -9,7 +9,6 @@ $(function () {
         at: "right center"
       }
     });
-  
     // Form validation
     $("#contactForm").validate({
       submitHandler: function (form) {

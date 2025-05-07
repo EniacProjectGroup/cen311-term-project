@@ -9,17 +9,17 @@ $(document).ready(function() {
         }
     });
 
-    // Filtreleme işlevi
+    // Filtering functionality
     $('.project-categories a').on('click', function(e) {
         e.preventDefault();
         var filterValue = $(this).attr('data-filter');
         iso.arrange({ filter: filterValue });
 
-        // Aktif filtreyi belirtme
+        // set active filter
         $('.project-categories a').removeClass('active');
         $(this).addClass('active');
     });
 
-    // Başlangıçta "All" filtresi aktif
+    // initially the "All" filter is active
     $('.project-categories a[data-filter="*"]').addClass('active');
 });
